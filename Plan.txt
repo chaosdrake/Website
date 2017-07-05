@@ -4,6 +4,8 @@ Process 1 - create a personal website displaying all information needed with all
 
 Process 2 - link this website to text files that store the information
 
-Process 3 - write a program to create these text files using a GUI
+Process 3 - link this website to text files that store the information
 
-Process 4 - create multiple layouts and ways to personalise the website
+Process 4 - create multiple layouts and ways to personalise the websiteProcess 4 - write a program to create these text files using a GUI
+
+Process 5 - create multiple layouts and ways to personalise the website
