@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="javaScript.js"></script>
+		<link rel="stylesheet" href="StyleSheet.css"><link/>
+		<title>Cameron Thompson</title>
+	</head>
+	
+	<body id="MainBody">
+	
+		<!-- Information Bar -->
+		<div id="TopBar">
+			<p id="InfoPanel" onmouseover="DisplayInfo(true);" onmouseout="DisplayInfo(false);">Info</p>
+			<div id="InfoDiv" onmouseover="DisplayInfo(true);" onmouseout="DisplayInfo(false);">
+				<img id="InfoImage" src="Images/ProfilePic.PNG" alt="ProfilePicture.png">
+				<p id="InfoName">Cameron Lyle Thompson</p>
+				<p id="DateOfBirth"><b>D/O/B:</b> 20/12/1998</p>
+				<p id="ContactEmail"><b>Contact Email:</b> <br>camo.thommo@gmail.com</p>
+				<p id="ContactNumber"><b>Contact Number:</b> <br>0401 260 328</p>
+				<p id="WorkStatus"><b>Current Employment:</b> <br>unemployed</p>
+			</div>
+		</div>
+		
+	<!-- Social Media Chanels -->
+		<div id="SocialMediaDiv">
+		<p id="SocialMediaTitle">Social Media</p>
+		
+		<!-- Facebook -->
+			<img id="FacebookImage" src="Images/FacebookLogo.png" alt="FacebookImage.png" onmouseover="FacebookImageHighlight(true);" onmouseout="FacebookImageHighlight(false);" onclick="OpenFacebook()">
+			<p id="FacebookName">Cameron Thompson</p>
+			
+		<!-- GitHub -->
+			<img id="GitHubImage" src="Images/GitHubLogo.png" alt="GitHubImage.png" onmouseover="GitHubImageHighlight(true);" onmouseout="GitHubImageHighlight(false);" onclick="OpenGitHub()">
+			<p id="GitHubName">chaos<br>drake2</p>
+		</div>
+		
+	<!-- Name and Logo on the Bar -->
+		<div id="NameAndImage">
+			<img id="ProfilePic" src="Images/ProfilePic.PNG" alt="ProfileImage.png">
+			<div id="ProfilePicHitBox" onmouseover="ChangeImageSize(true);" onmouseout="ChangeImageSize(false);"></div>
+			<p id="ProfileName">Cameron Thompson</p>	
+		</div>
+		
+	</body>
+	
+</html>
