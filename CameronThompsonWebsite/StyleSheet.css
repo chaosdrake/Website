@@ -243,3 +243,23 @@ div {
 	font-size: 120%;
 	visibility: hidden;
 }
+
+#ResumeImage {
+	position: absolute;
+	top: 340px;
+	left: 10px;
+	width: 200px;
+}
+
+#ResumeDownload {
+	position: absolute;
+	top: 317px;
+	left: 10px;
+	width: 200px;
+	text-align-last: center;
+	background-color: black;
+}
+
+#ResumeDownload:hover {
+	color: white;
+}

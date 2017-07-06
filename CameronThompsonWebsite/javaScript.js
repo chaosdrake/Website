@@ -62,3 +62,13 @@ function DisplayInfo(TF){
 		infoDiv.style.visibility = "hidden";
 	}
 }
+
+function ResumeHighlight(TF){
+	ResumePicture = document.getElementById("ResumeImage");
+	
+	if (TF){
+		ResumePicture.src = "Images/ResumeImage.PNG";
+	} else {
+		ResumePicture.src = "Images/ResumeImageHover.PNG";
+	}
+}
