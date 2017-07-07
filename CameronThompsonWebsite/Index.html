@@ -40,8 +40,21 @@
 		</div>
 		
 	<!-- Resume Download -->
-	<a id="ResumeDownload" href="DownloadFiles/Cameron_Thompson_Resume_2017.pdf" download>download Resume</a>
+		<a id="ResumeDownload" href="DownloadFiles/Cameron_Thompson_Resume_2017.pdf" download>download Resume</a>
 		<img id="ResumeImage" src="Images/ResumeImageHover.PNG" alt="Resume.pdf" onmouseover="ResumeHighlight(true);" onmouseout="ResumeHighlight(false);">
+		
+	<!-- Skills and Achievements Div -->
+		<div id="SkillsDiv">
+			<div id="SkillTabs">
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(1);" onmouseover="HoverTabs(1, true)" onmouseout="HoverTabs(1, false);">3D Modelling</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(2);" onmouseover="HoverTabs(2, true)" onmouseout="HoverTabs(2, false);">Animation</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(3);" onmouseover="HoverTabs(3, true)" onmouseout="HoverTabs(3, false);">Programming</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(4);" onmouseover="HoverTabs(4, true)" onmouseout="HoverTabs(4, false);">Game</button>
+			</div>
+		</div>
+		
+		<!-- inside the div -->
+		<div id="SkillsPane"></div>
 		
 	<!-- Name and Logo on the Bar -->
 		<div id="NameAndImage">

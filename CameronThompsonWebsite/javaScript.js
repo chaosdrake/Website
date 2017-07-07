@@ -72,3 +72,29 @@ function ResumeHighlight(TF){
 		ResumePicture.src = "Images/ResumeImageHover.PNG";
 	}
 }
+
+Tabs = document.getElementsByName("Tab");
+var SelectedTab = 0;
+
+function HoverTabs(tab, TF){
+	if(tab != SelectedTab){
+		if (TF){
+			Tabs[tab-1].setAttribute("style", "background-color: grey;");
+		} else {
+			Tabs[tab-1].setAttribute("style", "background-color: black;");
+		}
+	}
+}
+
+function SelectTab(tab){
+	SelectedTab = tab;
+	for (var i = 0; i < Tabs.length; i++){
+		if (i != tab-1){
+			Tabs[i].setAttribute("style", "background-color: black;");
+			//Tabs[i].body.style.backgroundColor = "black";
+		} else {
+			Tabs[i].setAttribute("style", "background-color: #6b00b3;");
+			//Tabs[i].body.style.backgroundColor = "black";
+		}
+	}
+}
