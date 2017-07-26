@@ -148,6 +148,7 @@ div {
 	border-style: dashed;
 	border-width: 0.5px;
 	border-color: rgba(0,0,0,0.3);
+	cursor: pointer;
 }
 
 #ProfileName {
@@ -155,6 +156,7 @@ div {
 	top: -25px;
 	left: 80px;
 	font-size: 200%;
+	cursor: pointer;
 }
 
 #ProfileName:hover {
@@ -307,6 +309,28 @@ div {
 	border-right-color: var(--main-color); 
 }
 
+#SkillsXTab {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	background-color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    right: 0px;
+	font-size: 150%;
+	text-align-last: center;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: var(--main-color); 
+}
+
+#SkillsXTab:hover {
+	background-color: grey;
+}
+
 #SkillsPane {
 	position: absolute;
 	top: 110px;
@@ -317,4 +341,65 @@ div {
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--main-color);
+}
+
+#EducationPanel {
+	position: absolute;
+	bottom: -475px;
+	right: 10px;
+	background-color: rgba(0,0,0,0.5);
+	width: 300px;
+	height: 500px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+#EducationLabel {
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	text-align-last: center;
+	font-size: 150%;
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+#EducationLabel:hover {
+	color: var(--main-color);
+}
+
+#EducationArrow {
+	position: absolute;
+	top: -0px;
+	right: 10px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+#EducationLevels {
+	position: relative;
+	width: 100%;
+	font-size: 150%;
+	text-align-last: center;
+	height: 15px;
+	top: 5px;
+	
+	border-top-style: solid;
+	border-top-color: black;
+	border-to-width: 1px;
+	
+	padding-top: 10px;
+}
+
+#EducationExperience {
+	position: relative;
+	width: 100%;
+	font-size: 120%;
+	text-align: center;
 }
