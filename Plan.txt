@@ -1,0 +1,11 @@
+Statement:
+
+Process 1 - create a personal website displaying all information needed with all functionality needed
+
+Process 2 - setup a system to host the website
+
+Process 3 - link this website to text files that store the information
+
+Process 4 - write a program to create these text files using a GUI
+
+Process 5 - create multiple layouts and ways to personalise the website

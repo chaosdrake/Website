@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="javaScript.js"></script>
+		<script src="JQuery/jquery-3.2.1.js"></script>
+		<link rel="stylesheet" href="StyleSheet.css"><link/>
+		<title>Cameron Thompson</title>
+	</head>
+	
+	<body id="MainBody">
+	
+		<!-- Information Bar -->
+		<div id="TopBar">
+			<p id="InfoPanel" onmouseover="DisplayInfo(true);" onmouseout="DisplayInfo(false);">Info</p>
+			<div id="InfoDiv">
+				<img id="InfoImage" src="Images/ProfilePic.PNG" alt="ProfilePicture.png">
+				<p id="InfoName">Cameron Lyle Thompson</p>
+				<p id="DateOfBirth"><b>D/O/B:</b> 20/12/1998</p>
+				<p id="ContactEmail"><b>Contact Email:</b> <br>camo.thommo@gmail.com</p>
+				<p id="ContactNumber"><b>Contact Number:</b> <br>0401 260 328</p>
+				<p id="WorkStatus"><b>Current Employment:</b> <br>unemployed</p>
+			</div>
+		</div>
+		
+	<!-- Social Media Chanels -->
+		<div id="SocialMediaDiv">
+		<p id="SocialMediaTitle">Social Media</p>
+		
+		<!-- Facebook -->
+			<img id="FacebookImage" src="Images/FacebookLogo.png" alt="FacebookImage.png" onmouseover="FacebookImageHighlight(true);" onmouseout="FacebookImageHighlight(false);" onclick="OpenFacebook()" title="Facebook">
+			<p id="FacebookName">Cameron Thompson</p>
+			
+		<!-- GitHub -->
+			<img id="GitHubImage" src="Images/GitHubLogo.png" alt="GitHubImage.png" onmouseover="GitHubImageHighlight(true);" onmouseout="GitHubImageHighlight(false);" onclick="OpenGitHub()" title="GitHub">
+			<p id="GitHubName">chaos<br>drake2</p>
+			
+		<!-- Discord -->
+			<img  id="DiscordImage" src="Images/Discord.png" alt="DiscordImage.png" onmouseover="DiscordImageHighlight(true);" onmouseout="DiscordImageHighlight(false);" onclick="OpenDiscord();" title="Discord">
+			<p id="DiscordName">chaosdrake<br>#2497</p>
+		</div>
+		
+	<!-- Resume Download -->
+		<a id="ResumeDownload" href="DownloadFiles/Cameron_Thompson_Resume_2017.pdf" download>download Resume</a>
+		<img id="ResumeImage" src="Images/ResumeImageHover.PNG" alt="Resume.pdf" onmouseover="ResumeHighlight(true);" onmouseout="ResumeHighlight(false);" title="Resume">
+		
+	<!-- Skills and Achievements Div -->
+		<div id="SkillsDiv">
+			<div id="SkillTabs">
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(1);" onmouseover="HoverTabs(1, true)" onmouseout="HoverTabs(1, false);">3D Modelling</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(2);" onmouseover="HoverTabs(2, true)" onmouseout="HoverTabs(2, false);">Animation</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(3);" onmouseover="HoverTabs(3, true)" onmouseout="HoverTabs(3, false);">Programming</button>
+				<button id="SkillsTab" name="Tab" onclick="SelectTab(4);" onmouseover="HoverTabs(4, true)" onmouseout="HoverTabs(4, false);">Game</button>
+				<button id="SkillsXTab" name="Tab" onclick="SelectTab(0);">X</button>
+			</div>
+		</div>
+		
+		<!-- inside the div -->
+		<div id="SkillsPane">
+			<img src="Skills/3DModelling/Night_Swarz.png" alt="ModelImage1.png" style="position: absolute; top: 10px; left: 10px; height: 200px;">
+			<img src="Skills/3DModelling/Night_Swarz_AllClothes.png" alt="ModelImage2.png" style="position: absolute; bottom: 10px; left: 10px; height: 200px;">
+			<p style="position: absolute; top: calc(50% - 50px); left: 0px; width: 170px; text-align: center; font-size: 180%;">Character 1</p>
+			<img src="Skills/3DModelling/Samurai_Render.png" alt="ModelImage3.png" style="position: absolute; top: 10px; right: 30px; height: 200px;">
+			<img src="Skills/3DModelling/Samurai_Posed.png" alt="ModelImage4.png" style="position: absolute; bottom: 10px; right: 10px; height: 200px;">
+			<p style="position: absolute; top: calc(50% - 50px); right: 0px; width: 170px; text-align: center; font-size: 180%;">Character 2</p>
+			<p style="position: absolute; top: 0px; left: 175px; height: calc(100% - 20px); width: calc(100% - 330px); text-align: center;"> I have been 3D modelling since January of 2014. I have been doing so as a recreational activity in order to provide myself with objects to move around in a gaming environment. I enjoy the coding challanges I face more so than 3D modelling, however through developing my skills I have acquired a talent and satasfaction through the models I have created. I started with very basic designs and now I am confident in my abilities to create models based on 2D sketches, texture and paint the models as well as pose and render them to create images. The tools I have always used are the <i>Blender</i> 3D Modelling program. This is a free program that is mainly used in low budget game making.</p>
+			<p style="position: absolute; top: 220px; left: 175px; height: calc(100% - 20px); width: calc(100% - 330px); text-align: center; font-size: 200%;">Some More Models</p>			
+			<img id="ChangingImage" style="position: absolute; top: 300px; left: calc(50%); height: 200px;">
+			<img src="Images/LeftArrow.png" style="position: absolute; top: 350px; left: calc(50% - 200px); height: 50px; cursor: pointer;" onclick="ChangeToNext('false');">
+			<img src="Images/RightArrow.png" style="position: absolute; top: 350px; right: calc(50% - 200px); height: 50px; cursor: pointer;" onclick="ChangeToNext('true');">
+			
+			<script>
+			
+			var currentImage = 0;
+			var imageID = ["Night_Swarz.png", "Night_Swarz_AllClothes.png", "Samurai_Posed.png", "Samurai_Render.png"];
+			
+			function ChangeImageTo(number){
+				img = document.getElementById("ChangingImage");
+				currentImage = number;
+				img.src = "Skills/3DModelling/" + imageID[number];
+				img.setAttribute("style", "height: 200px;");
+				var width = img.clientWidth/2;
+				img.setAttribute("style", "position: absolute; top: 300px; left: calc(50% - " + width.toString() + "px); height: 200px;");
+			}
+			
+			function ChangeToNext(forward){
+				if(forward == "true"){
+					if(currentImage == imageID.length-1){
+						ChangeImageTo(0);
+					} else {
+						ChangeImageTo(currentImage+1);
+					}
+				} else {
+					if(currentImage == 0){
+						ChangeImageTo(imageID.length-1);
+					} else {
+						ChangeImageTo(currentImage-1);
+					}
+				}
+			}
+			
+			ChangeImageTo(0);
+			</script>			
+		</div>
+		
+		<!-- Education -->
+		<div id="EducationPanel">
+			<p id="EducationLabel" onclick="EducationPopUp();">Education</p>
+			<img id="EducationArrow" src="Images/UpArrow(WhiteCircle).png" onclick="EducationPopUp();">
+			<p id="EducationLevels"><b>University:</b></p>
+			<p id="EducationExperience"><b>Queensland University of Technology</b> - Bachelor degree of <i>Information Technology <br>(JAN 2016 - DEC 2018)</i></p>
+			<p id="EducationLevels"><b>High School:</b></p>
+			<p id="EducationExperience"><b>Ferny Grove State High School</b> - Year 12 Graduate<br>(JAN 2011 - DEC 2015)</p>
+			<p id="EducationLevels"><b>Primary School:</b></p>
+			<p id="EducationExperience"><b>Ferny Hills State School</b> - Year 7 Graduate<br>(JAN 2004 - DEC 2010)</p>
+		</div>
+		
+	<!-- Name and Logo on the Bar -->
+		<div id="NameAndImage">
+			<img id="ProfilePic" src="Images/ProfilePic.PNG" alt="ProfileImage.png">
+			<div id="ProfilePicHitBox" onmouseover="ChangeImageSize(true);" onmouseout="ChangeImageSize(false);"></div>
+			<p id="ProfileName">Cameron Thompson</p>	
+		</div>
+		
+	</body>
+	
+</html>

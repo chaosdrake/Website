@@ -1,0 +1,10 @@
+List of Programs and Tools:
+
+1. CodeLobster (coding environment)
+2. GitHub Desktop (documentation)
+3. GIMP2 (image editing software)
+
+Coding Languages:
+1. html
+2. css
+3. javascript 
