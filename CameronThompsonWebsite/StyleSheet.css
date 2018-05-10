@@ -17,7 +17,7 @@ div {
 }
 
 #MainBody {
-	background-image: url('Images/BackgroundImage.jpg');
+	background-image: url('../images/BackgroundImage.jpg');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -27,9 +27,9 @@ div {
 
 #TopBar {
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 50px;
+	top: 0%;
+	left: 0%;
+	height: 9%;
 	width: 100%;
 	border-style: solid;
 	border-top-width: 0px;
@@ -41,12 +41,12 @@ div {
 
 #InfoPanel {
 	position: absolute;
-	top: -32px;
-	left: 1265px;
+	top: -60%;
+	right: 0%;
 	font-size: 200%;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	width: 100px;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	width: 10%;
 	text-align-last: center;
 	border-left-style: solid;
 	border-left-width: 1px;
@@ -60,12 +60,12 @@ div {
 
 #InfoDiv {
 	position: absolute;
-	height: 300px;
-	width: 300px;
-	top: 51px;
-	left: 1062px;
+	height: 580%;
+	width: 25%;
+	top: 101%;
+	right: 0%;
 	background-color: white;
-	background-image:url('Images/InfoBackgroundImage.jpg');
+	background-image:url('../images/InfoBackgroundImage.jpg');
 	background-size: 100% 100%;
 	border-style: solid;
 	border-width: 2px;
@@ -76,9 +76,9 @@ div {
 
 #InfoImage {
 	position: absolute;
-	top: 5px;
-	left: 5px;
-	height: 100px;
+	top: 2%;
+	left: 2%;
+	height: 34%;
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
@@ -86,8 +86,8 @@ div {
 
 #InfoName {
 	position: absolute;
-	top: -30px;
-	right: 5px;
+	top: -10%;
+	right: 2%;
 	width: 52%;
 	color: black;
 	font-size: 200%;
@@ -96,54 +96,54 @@ div {
 
 #DateOfBirth {
 	position: absolute;
-	top: 100px;
-	left: 5px;
+	top: 34%;
+	left: 2%;
 	color: black;
 }
 
 #ContactEmail {
 	position: absolute;
-	top: 130px;
-	left: 5px;
+	top: 45%;
+	left: 2%;
 	color: black;
 }
 
 #ContactNumber {
 	position: absolute;
-	top: 180px;
-	left: 5px;
+	top: 62%;
+	left: 2%;
 	color: black;
 }
 
 #WorkStatus {
 	position: absolute;
-	top: 230px;
-	left: 5px;
+	top: 78%;
+	left: 2%;
 	color: black;
 }
 
 #NameAndImage {
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 50px;
+	top: 0%;
+	left: 0%;
+	height: 10%;
 	width: 50%;
 	background-color: rgba(0,0,0,0);
 }
 
 #ProfilePic {
 	position: absolute;
-	top: 5px;
-	left: 10px;
-	height: 40px;
+	top: 10%;
+	left: 2%;
+	height: 70%;
 }
 
 #ProfilePicHitBox {
 	position: absolute;
-	top: 5px;
-	left: 10px;
-	height: 40px;
-	width: 50px;
+	top: 10%;
+	left: 2%;
+	height: 70%;
+	width: 8%;
 	background-color: rgba(0,0,0,0);
 	border-style: dashed;
 	border-width: 0.5px;
@@ -153,8 +153,8 @@ div {
 
 #ProfileName {
 	position: absolute;
-	top: -25px;
-	left: 80px;
+	top: -40%;
+	left: 13%;
 	font-size: 200%;
 	cursor: pointer;
 }
@@ -165,11 +165,11 @@ div {
 
 #SocialMediaDiv {
 	position: absolute;
-	top: 60px;
-	left: 10px;
-	height: 250px;
-	width: 200px;
-	background-image:url('Images/SocialMediaBackgroundImage.jpg');
+	top: 10%;
+	left: 1%;
+	height: 45%;
+	width: 15%;
+  background-image:url('../images/SocialMediaBackgroundImage.jpg');
 	background-size: 100% 50%;
 	border-style: solid;
 	border-width: 1px;
@@ -179,8 +179,8 @@ div {
 
 #SocialMediaTitle {
 	position: absolute;
-	top: -32px;
-	left: 0px;
+	top: -12.5%;
+	left: 0%;
 	width: 100%;
 	text-align-last: center;
 	background-color: var(--main-color);
@@ -189,20 +189,19 @@ div {
 
 #FacebookImage {
 	position: absolute;
-	top: 60px;
-	left: 15px;
-	height: 50px;
-	width: 50px;
+	top: 22%;
+	left: 8%;
+	height: 20%;
+	width: 25%;
 	cursor: pointer;
 }
 
 #FacebookName {
 	position: absolute;
-	top: 35px;
-	left: 77px;
-	height: 50px;
-	width: 50px;
-	text-align: center;
+	top: 12%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
 	text-align-last: center;
 	font-size: 150%;
 	visibility: hidden;
@@ -210,40 +209,39 @@ div {
 
 #GitHubImage {
 	position: absolute;
-	top: 120px;
-	left: 15px;
-	height: 50px;
-	width: 50px;
+	top: 47.5%;
+	left: 8%;
+	height: 20%;
+	width: 26%;
 	cursor: pointer;
 }
 
 #GitHubName {
 	position: absolute;
-	top: 95px;
-	left: 77px;
-	height: 50px;
-	width: 50px;
+	top: 38%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
 	text-align: center;
-	text-align-last: center;
 	font-size: 150%;
 	visibility: hidden;
 }
 
 #DiscordImage {
 	position: absolute;
-	top: 180px;
-	left: 15px;
-	height: 50px;
-	width: 50px;
+	top: 72.5%;
+	left: 8%;
+	height: 20%;
+	width: 26%;
 	cursor: pointer;
 }
 
 #DiscordName {
 	position: absolute;
-	top: 165px;
-	left: 77px;
-	height: 50px;
-	width: 50px;
+	top: 65%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
 	text-align: center;
 	text-align-last: center;
 	font-size: 120%;
@@ -252,16 +250,17 @@ div {
 
 #ResumeImage {
 	position: absolute;
-	top: 340px;
-	left: 10px;
-	width: 200px;
+	top: 60%;
+	left: 1%;
+	height: 39%;
+	width: 15%;
 }
 
 #ResumeDownload {
 	position: absolute;
-	top: 317px;
-	left: 10px;
-	width: 200px;
+	top: 56%;
+	left: 1%;
+	width: 15%;
 	text-align-last: center;
 	background-color: black;
 	cursor: pointer;
@@ -273,10 +272,10 @@ div {
 
 #SkillsDiv {
 	position: absolute;
-	top: 60px;
-	left: 230px;
-	height: 555px;
-	width: 805px;
+	top: 10%;
+	left: 18%;
+	height: 87%;
+	width: 62%;
 	background-color: rgba(0,0,0,0.3);
 	border-style: solid;
 	border-width: 5px;
@@ -285,16 +284,16 @@ div {
 
 #SkillTabs {
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 45px;
+	top: 0%;
+	left: 0%;
+	height: 10%;
 	width: 100%;
 	background-color: black;
 }
 
 #SkillsTab {
 	position: relative;
-	top: 0px;
+	top: 0%;
 	height: 100%;
 	background-color: inherit;
     float: left;
@@ -311,7 +310,7 @@ div {
 
 #SkillsXTab {
 	position: absolute;
-	top: 0px;
+	top: 0%;
 	height: 100%;
 	background-color: black;
     float: left;
@@ -319,7 +318,7 @@ div {
     outline: none;
     cursor: pointer;
     color: white;
-    right: 0px;
+    right: 0%;
 	font-size: 150%;
 	text-align-last: center;
 	border-left-style: solid;
@@ -333,10 +332,10 @@ div {
 
 #SkillsPane {
 	position: absolute;
-	top: 110px;
-	left: 235px;
-	height: 507px;
-	width: 803px;
+	top: 19.5%;
+	left: 18.25%;
+	height: 78%;
+	width: 62%;
 	background-color: rgba(0,0,0,0);
 	border-style: solid;
 	border-width: 1px;
@@ -345,20 +344,21 @@ div {
 
 #EducationPanel {
 	position: absolute;
-	bottom: -475px;
-	right: 10px;
+	bottom: -83%;
+	right: 1%;
 	background-color: rgba(0,0,0,0.5);
-	width: 300px;
-	height: 500px;
+	width: 17%;
+	height: 88%;
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	overflow-y: scroll;
 }
 
 #EducationLabel {
 	position: absolute;
-	top: -25px;
-	left: 0px;
+	top: -5%;
+	left: 0%;
 	width: 100%;
 	border-bottom-style: solid;
 	border-bottom-color: black;
@@ -375,10 +375,10 @@ div {
 
 #EducationArrow {
 	position: absolute;
-	top: -0px;
-	right: 10px;
-	height: 30px;
-	width: 30px;
+	top: 0%;
+	right: 5%;
+	height: 5%;
+	width: 13%;
 	cursor: pointer;
 }
 
