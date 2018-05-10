@@ -1,0 +1,405 @@
+:root{
+	--main-color: #6b00b3;
+}
+
+body {
+	background-color: black;
+}
+
+p {
+	background-color: rgba(0,0,0,0);
+	color: white;
+	font-family: arial;
+}
+
+div {
+	background-color: black;
+}
+
+#MainBody {
+	background-image: url('../images/BackgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+#TopBar {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 9%;
+	width: 100%;
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-color: var(--main-color);
+}
+
+#InfoPanel {
+	position: absolute;
+	top: -60%;
+	right: 0%;
+	font-size: 200%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	width: 10%;
+	text-align-last: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: var(--main-color);
+	cursor: pointer;
+}
+
+#InfoPanel:hover {
+	background-color: var(--main-color);
+}
+
+#InfoDiv {
+	position: absolute;
+	height: 580%;
+	width: 25%;
+	top: 101%;
+	right: 0%;
+	background-color: white;
+	background-image:url('../images/InfoBackgroundImage.jpg');
+	background-size: 100% 100%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--main-color);
+	border-top-width: 0px;
+	visibility: hidden;
+}
+
+#InfoImage {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	height: 34%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+#InfoName {
+	position: absolute;
+	top: -10%;
+	right: 2%;
+	width: 52%;
+	color: black;
+	font-size: 200%;
+	text-align: center;
+}
+
+#DateOfBirth {
+	position: absolute;
+	top: 34%;
+	left: 2%;
+	color: black;
+}
+
+#ContactEmail {
+	position: absolute;
+	top: 45%;
+	left: 2%;
+	color: black;
+}
+
+#ContactNumber {
+	position: absolute;
+	top: 62%;
+	left: 2%;
+	color: black;
+}
+
+#WorkStatus {
+	position: absolute;
+	top: 78%;
+	left: 2%;
+	color: black;
+}
+
+#NameAndImage {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 10%;
+	width: 50%;
+	background-color: rgba(0,0,0,0);
+}
+
+#ProfilePic {
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	height: 70%;
+}
+
+#ProfilePicHitBox {
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	height: 70%;
+	width: 8%;
+	background-color: rgba(0,0,0,0);
+	border-style: dashed;
+	border-width: 0.5px;
+	border-color: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+#ProfileName {
+	position: absolute;
+	top: -40%;
+	left: 13%;
+	font-size: 200%;
+	cursor: pointer;
+}
+
+#ProfileName:hover {
+	color: var(--main-color);
+}
+
+#SocialMediaDiv {
+	position: absolute;
+	top: 10%;
+	left: 1%;
+	height: 45%;
+	width: 15%;
+  background-image:url('../images/SocialMediaBackgroundImage.jpg');
+	background-size: 100% 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-top-width: 0px;
+	border-color: var(--main-color);
+}
+
+#SocialMediaTitle {
+	position: absolute;
+	top: -12.5%;
+	left: 0%;
+	width: 100%;
+	text-align-last: center;
+	background-color: var(--main-color);
+	font-size: 200%;
+}
+
+#FacebookImage {
+	position: absolute;
+	top: 22%;
+	left: 8%;
+	height: 20%;
+	width: 25%;
+	cursor: pointer;
+}
+
+#FacebookName {
+	position: absolute;
+	top: 12%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
+	text-align-last: center;
+	font-size: 150%;
+	visibility: hidden;
+}
+
+#GitHubImage {
+	position: absolute;
+	top: 47.5%;
+	left: 8%;
+	height: 20%;
+	width: 26%;
+	cursor: pointer;
+}
+
+#GitHubName {
+	position: absolute;
+	top: 38%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
+	text-align: center;
+	font-size: 150%;
+	visibility: hidden;
+}
+
+#DiscordImage {
+	position: absolute;
+	top: 72.5%;
+	left: 8%;
+	height: 20%;
+	width: 26%;
+	cursor: pointer;
+}
+
+#DiscordName {
+	position: absolute;
+	top: 65%;
+	right: 0%;
+	height: 20%;
+	width: 65%;
+	text-align: center;
+	text-align-last: center;
+	font-size: 120%;
+	visibility: hidden;
+}
+
+#ResumeImage {
+	position: absolute;
+	top: 60%;
+	left: 1%;
+	height: 39%;
+	width: 15%;
+}
+
+#ResumeDownload {
+	position: absolute;
+	top: 56%;
+	left: 1%;
+	width: 15%;
+	text-align-last: center;
+	background-color: black;
+	cursor: pointer;
+}
+
+#ResumeDownload:hover {
+	color: white;
+}
+
+#SkillsDiv {
+	position: absolute;
+	top: 10%;
+	left: 18%;
+	height: 87%;
+	width: 62%;
+	background-color: rgba(0,0,0,0.3);
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+}
+
+#SkillTabs {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 10%;
+	width: 100%;
+	background-color: black;
+}
+
+#SkillsTab {
+	position: relative;
+	top: 0%;
+	height: 100%;
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+	font-size: 150%;
+	text-align-last: center;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: var(--main-color); 
+}
+
+#SkillsXTab {
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	background-color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    right: 0%;
+	font-size: 150%;
+	text-align-last: center;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: var(--main-color); 
+}
+
+#SkillsXTab:hover {
+	background-color: grey;
+}
+
+#SkillsPane {
+	position: absolute;
+	top: 19.5%;
+	left: 18.25%;
+	height: 78%;
+	width: 62%;
+	background-color: rgba(0,0,0,0);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--main-color);
+}
+
+#EducationPanel {
+	position: absolute;
+	bottom: -83%;
+	right: 1%;
+	background-color: rgba(0,0,0,0.5);
+	width: 17%;
+	height: 88%;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	overflow-y: scroll;
+}
+
+#EducationLabel {
+	position: absolute;
+	top: -5%;
+	left: 0%;
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	text-align-last: center;
+	font-size: 150%;
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+#EducationLabel:hover {
+	color: var(--main-color);
+}
+
+#EducationArrow {
+	position: absolute;
+	top: 0%;
+	right: 5%;
+	height: 5%;
+	width: 13%;
+	cursor: pointer;
+}
+
+#EducationLevels {
+	position: relative;
+	width: 100%;
+	font-size: 150%;
+	text-align-last: center;
+	height: 15px;
+	top: 5px;
+	
+	border-top-style: solid;
+	border-top-color: black;
+	border-to-width: 1px;
+	
+	padding-top: 10px;
+}
+
+#EducationExperience {
+	position: relative;
+	width: 100%;
+	font-size: 120%;
+	text-align: center;
+}
